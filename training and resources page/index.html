@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training and Resources</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-left">
+                <h1>Training & Resources</h1>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="jobgiver.html">Home</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar for categories -->
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#webinars">Webinars</a></li>
+                <li><a href="#articles">Articles</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main content area -->
+        <div class="content">
+            <!-- Featured Resource Section -->
+            <section class="featured-resource">
+                <h2>Featured Resource</h2>
+                <div class="resource-card">
+                    <h3>Advanced JavaScript Workshop</h3>
+                    <p>Deep dive into closures, asynchronous programming, and more in this hands-on workshop. Limited slots available!</p>
+                    <p><strong>Date:</strong> September 15, 2024</p>
+                    <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+                    <p><strong>Host:</strong> John Doe, Senior Developer at TechCorp</p>
+                    <p><strong>Description:</strong> This workshop covers advanced JavaScript concepts including closures, promises, and async/await. Perfect for developers looking to enhance their skills.</p>
+                    <button onclick="enrollWorkshop()">Enroll Now</button>
+                </div>
+            </section>
+
+            <!-- Resource Sections -->
+            <section id="workshops">
+                <h3>Workshops</h3>
+                <div class="grid-container">
+                    <div class="resource-card">
+                        <h4>JavaScript Best Practices</h4>
+                        <p><strong>Date:</strong> October 10, 2024</p>
+                        <p><strong>Time:</strong> 1:00 PM - 4:00 PM</p>
+                        <p><strong>Host:</strong> Jane Smith, Lead Engineer at CodeAcademy</p>
+                        <p><strong>Description:</strong> Learn best practices for writing clean and efficient JavaScript code. This workshop is ideal for intermediate developers.</p>
+                        <button onclick="enrollWorkshop()">Enroll</button>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Intro to Data Structures</h4>
+                        <p><strong>Date:</strong> October 22, 2024</p>
+                        <p><strong>Time:</strong> 2:00 PM - 5:00 PM</p>
+                        <p><strong>Host:</strong> Mike Johnson, Data Scientist at DataWorks</p>
+                        <p><strong>Description:</strong> An introductory workshop on data structures including arrays, linked lists, and hash tables. Perfect for beginners looking to understand data management.</p>
+                        <button onclick="enrollWorkshop()">Enroll</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tutorials">
+                <h3>Tutorials</h3>
+                <div class="grid-container">
+                    <div class="resource-card">
+                        <h4>Building a React App</h4>
+                        <p><strong>Description:</strong> A comprehensive tutorial on creating a React application from scratch. Covers components, state management, and routing.</p>
+                        <a href="#">View Tutorial</a>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Getting Started with Node.js</h4>
+                        <p><strong>Description:</strong> Learn how to set up a Node.js server and build RESTful APIs. Ideal for backend developers or those looking to get into server-side programming.</p>
+                        <a href="#">View Tutorial</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="webinars">
+                <h3>Webinars</h3>
+                <div class="grid-container">
+                    <div class="resource-card">
+                        <h4>Understanding Microservices</h4>
+                        <p><strong>Date:</strong> November 5, 2024</p>
+                        <p><strong>Time:</strong> 3:00 PM - 4:30 PM</p>
+                        <p><strong>Host:</strong> Alice Cooper, Cloud Specialist at CloudTech</p>
+                        <p><strong>Description:</strong> Explore the microservices architecture and its benefits for scalable and maintainable applications.</p>
+                        <button onclick="enrollWebinar()">Register</button>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Modern Frontend Development</h4>
+                        <p><strong>Date:</strong> November 20, 2024</p>
+                        <p><strong>Time:</strong> 11:00 AM - 12:30 PM</p>
+                        <p><strong>Host:</strong> Robert Green, Frontend Lead at DevMasters</p>
+                        <p><strong>Description:</strong> A look into the latest trends and techniques in frontend development, including new tools and frameworks.</p>
+                        <button onclick="enrollWebinar()">Register</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="articles">
+                <h3>Articles</h3>
+                <div class="grid-container">
+                    <div class="resource-card">
+                        <h4>Optimizing Performance in React</h4>
+                        <p><strong>Author:</strong> Emily Clark</p>
+                        <p><strong>Summary:</strong> Tips and techniques for improving the performance of React applications, from memoization to lazy loading.</p>
+                        <a href="#">Read Article</a>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Best Practices for API Development</h4>
+                        <p><strong>Author:</strong> David Lee</p>
+                        <p><strong>Summary:</strong> Essential practices for designing and building robust APIs, including versioning, error handling, and security considerations.</p>
+                        <a href="#">Read Article</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <br>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Freelan. All rights reserved.</p>
+    </footer>
+
+    <script src="training.js"></script>
+</body>
+</html>

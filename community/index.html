@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <h1>Community Forum</h1>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="../training and resources page/index.html">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Options to Create or Join Communities -->
+        <div class="community-options">
+            <button id="createCommunityBtn">Create Community</button>
+            <button id="browseCommunitiesBtn">Browse Communities</button>
+        </div>
+
+        <!-- Create Community Form -->
+        <div id="createCommunityForm" class="community-form hidden">
+            <h2>Create a New Community</h2>
+            <form onsubmit="createCommunity(); return false;">
+                <input type="text" id="communityName" placeholder="Community Name" required>
+                <textarea id="communityDescription" placeholder="Description" rows="4" required></textarea>
+                <button type="submit">Create Community</button>
+            </form>
+        </div>
+
+        <!-- Browse Communities -->
+        <div id="browseCommunities">
+            <h2>Available Communities</h2>
+            <div id="communityList">
+                <!-- List of communities will be dynamically added here -->
+            </div>
+            <button id="loadMoreBtn">Load More Communities</button>
+        </div>
+
+        <!-- Discussion Forum -->
+        <div id="discussion-forum">
+            <h2>Discussion Forum</h2>
+            <!-- Forum threads will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="community.js"></script>
+</body>
+</html>

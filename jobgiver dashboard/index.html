@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelan - Job Giver Dashboard</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="navbar-container">
+        <div class="navbar-left">
+            <h1>Welcome, Job Giver</h1>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#freelancer-list">Freelancers</a></li>
+                <li><a href="#post-job">Post Job</a></li>
+                <li><a href="../community/index.html">community</a></li>
+                <li><a href="../training and resources page/index.html">Resources</a></li>
+                <li><a href="#job-history">Job History</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <!-- Search Bar for Freelancers -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search freelancers by name or skills...">
+        <button>Search</button>
+    </div>
+
+    <!-- Sorting and Filtering Options -->
+    <div class="sort-filter">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+            <option value="experience">Experience</option>
+            <option value="rating">Rating</option>
+            <option value="price">Price per hour</option>
+        </select>
+
+        <label for="filter-skill">Filter by skill:</label>
+        <select id="filter-skill">
+            <option value="all">All</option>
+            <option value="web-development">Web Development</option>
+            <option value="graphic-design">Graphic Design</option>
+            <option value="content-writing">Content Writing</option>
+            <option value="ui-ux">UI/UX Design</option>
+        </select>
+    </div>
+
+    <!-- Featured Freelancers Section -->
+    <div id="featured-freelancers" class="featured-freelancers">
+        <h2>Featured Freelancers</h2>
+
+        <div class="freelancer-card">
+            <div class="freelancer-info">
+                <h3>Sarah Lee</h3>
+                <p>Experience: 6 years</p>
+                <p>Rating: 4.9/5</p>
+                <p>Price per hour: $40</p>
+                <div class="freelancer-skills">
+                    <span>UI/UX Design</span>
+                    <span>Figma</span>
+                    <span>Sketch</span>
+                </div>
+            </div>
+            <div class="freelancer-actions">
+                <p class="availability">Status: Available</p>
+                <button>View Profile</button>
+                <button>Hire Freelancer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Freelancer List -->
+    <div id="freelancer-list" class="freelancer-list">
+        <h2>Available Freelancers</h2>
+
+        <!-- Freelancer Card 1 -->
+        <div class="freelancer-card">
+            <div class="freelancer-info">
+                <h3>John Doe</h3>
+                <p>Experience: 3 years</p>
+                <p>Rating: 4.5/5</p>
+                <p>Price per hour: $25</p>
+                <div class="freelancer-skills">
+                    <span>Web Development</span>
+                    <span>JavaScript</span>
+                    <span>React.js</span>
+                </div>
+            </div>
+            <div class="freelancer-actions">
+                <p class="availability">Status: Currently Busy</p>
+                <button>View Profile</button>
+                <button>Hire Freelancer</button>
+                <button>Add to Favorites</button>
+            </div>
+        </div>
+
+        <!-- Freelancer Card 2 -->
+        <div class="freelancer-card">
+            <div class="freelancer-info">
+                <h3>Jane Smith</h3>
+                <p>Experience: 5 years</p>
+                <p>Rating: 4.8/5</p>
+                <p>Price per hour: $35</p>
+                <div class="freelancer-skills">
+                    <span>Graphic Design</span>
+                    <span>Photoshop</span>
+                    <span>Illustrator</span>
+                </div>
+            </div>
+            <div class="freelancer-actions">
+                <p class="availability">Status: Available</p>
+                <button>View Profile</button>
+                <button>Hire Freelancer</button>
+                <button>Add to Favorites</button>
+            </div>
+        </div>
+
+        <!-- Additional Freelancer Cards -->
+        <!-- Freelancer Card 3, 4, and 5 from previous examples -->
+
+    </div>
+
+    <!-- Job History Section -->
+    <div id="job-history" class="job-history">
+        <h2>Your Job History</h2>
+
+        <div class="job-card">
+            <h3>Web Development for E-commerce Website</h3>
+            <p>Freelancer: John Doe</p>
+            <p>Status: Completed</p>
+            <p>Rating: 4.5/5</p>
+            <p>Total Payment: $500</p>
+        </div>
+
+        <div class="job-card">
+            <h3>Logo Design for New Brand</h3>
+            <p>Freelancer: Jane Smith</p>
+            <p>Status: Ongoing</p>
+            <p>Total Payment: $150</p>
+        </div>
+    </div>
+
+    <!-- Job Posting Section -->
+    <div id="post-job" class="post-job">
+        <h2>Post a New Job</h2>
+        <form>
+            <input type="text" placeholder="Job Title" required>
+            <textarea rows="5" placeholder="Job Description" required></textarea>
+            <input type="text" placeholder="Skills Required" required>
+            <button type="submit">Post Job</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
